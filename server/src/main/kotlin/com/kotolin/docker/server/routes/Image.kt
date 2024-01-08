@@ -17,6 +17,7 @@ class Image {
     fun getImages ():String {
         return "Get Images!!!OKGoodjobOKKK???"
     }
+    @CrossOrigin
     @ResponseStatus(code = HttpStatus.OK)
     @GetMapping("/all/")
     fun getImagesAll ():InterfaceImage {
