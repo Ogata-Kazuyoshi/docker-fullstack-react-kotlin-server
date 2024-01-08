@@ -12,16 +12,14 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping("/api/v1/images")
 class Image {
-    @CrossOrigin
     @ResponseStatus(code = HttpStatus.OK)
     @GetMapping("/")
     fun getImages ():String {
-        return "Get Images!!!取れてるかな?Goodjob"
+        return "Get Images!!!OKGoodjobOKKK???"
     }
-    @CrossOrigin(origins = ["*"])
     @ResponseStatus(code = HttpStatus.OK)
-    @GetMapping("/all")
+    @GetMapping("/all/")
     fun getImagesAll ():InterfaceImage {
-        return InterfaceImage("TaroJiroSaburo",20)
+        return InterfaceImage("TaroJiroSaburoこんちは",20)
     }
 }
