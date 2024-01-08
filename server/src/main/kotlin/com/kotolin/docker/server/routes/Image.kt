@@ -16,12 +16,12 @@ class Image {
     @ResponseStatus(code = HttpStatus.OK)
     @GetMapping("/")
     fun getImages ():String {
-        return "Get Images!!!取れてるかな?"
+        return "Get Images!!!取れてるかな?Goodjob"
     }
     @CrossOrigin(origins = ["*"])
     @ResponseStatus(code = HttpStatus.OK)
     @GetMapping("/all")
     fun getImagesAll ():InterfaceImage {
-        return InterfaceImage("TaroJiro",20)
+        return InterfaceImage("TaroJiroSaburo",20)
     }
 }
