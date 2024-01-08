@@ -21,6 +21,7 @@ class Image {
     @ResponseStatus(code = HttpStatus.OK)
     @GetMapping("/all/")
     fun getImagesAll ():InterfaceImage {
+        println("ここのRequestきてまっせ!!")
         return InterfaceImage("TaroJiroSaburoこんちは",20)
     }
 }
