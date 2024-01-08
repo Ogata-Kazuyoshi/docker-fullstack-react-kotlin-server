@@ -18,7 +18,7 @@ class Image {
     fun getImages ():String {
         return "Get Images!!!取れてるかな?"
     }
-    @CrossOrigin
+    @CrossOrigin(origins = ["*"])
     @ResponseStatus(code = HttpStatus.OK)
     @GetMapping("/all")
     fun getImagesAll ():InterfaceImage {
